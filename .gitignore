@@ -1,0 +1,11 @@
+# backup files
+*~
+*#
+
+
+# generated files
+*.pdf
+*.html
+*.tex
+auto
+
