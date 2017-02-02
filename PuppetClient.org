@@ -36,5 +36,11 @@
 ** Security
    - On the puppet server, sign the certificate
      #+BEGIN_SRC sh
-     sudo puppetca --sign engedaq-dev.physics.ncsu.edu
+     sudo puppet cert list
+     sudo puppet cert sign engedaq-dev.physics.ncsu.edu
+     #+END_SRC
+** Test/run
+   - Back on the puppet client
+     #+BEGIN_SRC sh
+     puppet agent --test
      #+END_SRC

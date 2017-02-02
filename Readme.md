@@ -20,4 +20,11 @@ This assumes you have a clean install of Linux Mint (I'm using 17.3 KDE)
 
 -   On the puppet server, sign the certificate
     
-        sudo puppetca --sign engedaq-dev.physics.ncsu.edu
+        sudo puppet cert list
+        sudo puppet cert sign engedaq-dev.physics.ncsu.edu
+
+## Test/run
+
+-   Back on the puppet client
+    
+        puppet agent --test
