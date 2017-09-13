@@ -28,3 +28,13 @@ This assumes you have a clean install of Linux Mint (I'm using 17.3 KDE)
 -   Back on the puppet client
     
         puppet agent --test
+
+-   Once puppet is finished on the client, change the daq password
+        
+        sudo passwd daq
+
+-   Make an “enge” user
+   
+        sudo adduser enge
+        sudo adduser enge sudo
+        su enge
