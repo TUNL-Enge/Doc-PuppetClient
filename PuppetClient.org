@@ -29,6 +29,10 @@
      echo START=yes > puppet
      sudo mv puppet /etc/default/
      #+END_SRC
+   - Define the pupper server in /etc/hosts
+     #+BEGIN_SRC sh
+     152.1.53.75     engesrv.physics.ncsu.edu puppetmaster puppet
+     #+END_SRC
    - Start the puppet service
      #+BEGIN_SRC sh
      sudo /etc/init.d/puppet start     
